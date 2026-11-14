@@ -1,0 +1,29 @@
+.editpost-page {
+  width: 100%;
+  min-height: 75vh;
+  padding: 36px 0 60px;
+  background-color: #f9fafb;
+  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.editpost-card {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 32px;
+  box-shadow: 0 10px 25px -5px rgba(17, 24, 39, 0.05);
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .editpost-page {
+    padding: 24px 0 44px;
+  }
+
+  .editpost-card {
+    padding: 20px 16px;
+    border-radius: 12px;
+  }
+}

@@ -1,0 +1,80 @@
+.postcard-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.postcard-outer {
+  height: 100%;
+}
+
+.postcard-card {
+  height: 100%;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.postcard-card:hover {
+  transform: translateY(-4px);
+  border-color: #d1d5db;
+  box-shadow: 0 12px 24px -8px rgba(17, 24, 39, 0.1);
+}
+
+.postcard-media {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background-color: #f3f4f6;
+  overflow: hidden;
+}
+
+.postcard-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.postcard-card:hover .postcard-img {
+  transform: scale(1.04);
+}
+
+.postcard-content {
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  gap: 12px;
+}
+
+.postcard-title {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.postcard-cta {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #2563eb;
+  transition: color 0.2s ease;
+}
+
+.postcard-card:hover .postcard-cta {
+  color: #1d4ed8;
+}
